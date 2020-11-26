@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Demo</title>
+        <meta name="description" content="This is the description">
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <!-- JavaScript -->
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+      
+    </head>
+    
+    <body>
+        <header class="main-header">
+            <table style="width:100%;border: 0;position: fixed;background-color:black;height: 85px;">
+            <tr>
+                <th><h1 style="color:white">Demo</h1></th>
+                <th>
+                    <nav class="nav main-nav">
+                        <ul>
+                            <li style="float: left"><a onclick="demo()">Kadın</a></li>
+                            <li style="float: left"><a onclick="demo()">Erkek</a></li>
+                            <li style="float: left"><a onclick="demo()">Giyim</a></li>
+                            <li style="float: left"><a onclick="demo()">Aksesuar</a></li>
+                            <li style="float: left"><a onclick="demo()">Elektronik</a></li>
+                            <li><button style="background-color: black;border:0;color:white"><i id="login" class="material-icons" style="color:whitesmoke" onclick="demo()">login</i>Giriş Yap</button></li>
+                            <li><i id="sepet" class="material-icons" style="color:whitesmoke" onclick="myFunction()">shopping_cart</i></li>
+                        </ul>
+                    </nav>
+                </th>
+                </tr>
+            </table>
+            
+            
+        </header>
+        
+        <div class="shopping-cart" id="shopping-cart">
+            <p class="cart-empty">Sepetiniz Boş!</p>
+            <div id="cart-full">
+               
+                <table class="cart-table" id="cart-table">
+                <tr class="cart-titles">
+                    <th class="cart-photo-clmn"></th>
+                    <th class="cart-title-clmn">Ürün</th>
+                    <th class="cart-price-clmn">Fiyat</th>
+                </tr>
+               
+            
+            </table>
+                
+               
+                
+            
+            </div>
+             <div class="toplam-alan">
+                    <hr class="divider">
+                    <i  onclick="demo()" class="material-icons" style="color:orange;float:right;margin-top:5px;margin-right:5%;font-size: 48px">double_arrow</i>
+                    <p class="toplam-title">Toplam:</p>
+                    <p class="toplam-price">00₺</p>
+                    
+                </div>
+        
+        </div>
+        
+        <div class="page">
+            <div class="categories">
+                <div style="background-color: black"><p style="margin-left:15%;color:white;margin: 0;padding: 20px;font-weight: 700;font-size: 18px">Filtre</p></div>
+                
+                <hr class="divider">
+                <div class="cat-filter">
+                    <p style="font-size: 12px;margin-bottom:5px;font-weight: 700;">Kategoriler:</p>
+                    <select id="catfilter">
+                    <option value="Hepsi">Hepsi</option>
+                    </select>
+                </div>
+                <div class="price-filter">
+                    <p style="font-size: 12px;margin-bottom:5px;margin-top:0;font-weight: 700;">Fiyat:</p>
+                    <input id="filter-price-min" type="text" placeholder="Min."  required pattern="[0-9]{9,11}" 
+onkeypress='return isNumberKey(event)'>
+                    <input id="filter-price-max" type="text" placeholder="Max." required pattern="[0-9]{9,11}" 
+onkeypress='return isNumberKey(event)'>
+                </div>
+                <div class="button-filter">
+                    <button class="button" onclick="filter()">Filtrele</button>
+                </div>
+                <hr class="divider">
+                
+                
+                
+                <p style="margin-left:15%;margin-bottom: 0px;">Sizin için Seçtiklerimiz</p>
+                
+                 <div id="flickity-slider">
+                     
+              
+                    <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": true}'>
+  
+
+</div>
+
+                </div>
+            </div>
+            <div class="content">
+                <div class="banner"></div>
+                
+            
+                <!-- (1B) PRODUCTS WRAPPER -->
+                <div id="pwrap" class="cart-items">
+                </div>
+                <div class="urun-yok" style="display: none;margin: 20px">Ürün Bulunamadı!</div>
+               
+                
+                
+                
+            </div>
+        
+        </div>
+       
+        
+       <script src="Scripts/jquery-3.5.1.js"></script>
+        <script src="Scripts/index.js" async></script>
+        
+        
+        
+    </body>
+</html>

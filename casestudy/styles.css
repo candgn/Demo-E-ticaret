@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+
+@font-face {
+    font-family: "Booter - Zero Zero";
+    src: url("Fonts/Booter - Zero Zero.woff") format("woff"),
+         url("Fonts/Booter - Zero Zero.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Raleway;
+    color: #777;
+}
+html, body{
+    margin: 0;
+
+    padding: 0;
+
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+
+    min-height: 100%;
+    height: 100%;
+    max-height: 100%;
+}
+.nav ul {
+    margin: 0;
+}
+
+.nav li {
+    display: inline;
+    overflow: auto;
+    text-align: center;
+    vertical-align:middle;
+}
+
+.nav i {
+    display: inline-block;
+    padding: .5em;
+    color: white;
+    text-decoration: none;
+}
+.nav a {
+    display: inline-block;
+    padding: .5em;
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav {
+    text-align: right;
+    font-size: 1.1em;
+    font-weight: lighter;
+}
+
+.main-nav li {
+    padding: 0 3%;
+}
+
+body > header > table > tbody > tr > th:nth-child(2) > nav > ul > li:nth-child(6) > button:hover{
+    background-color: rgba(255, 255, 255, .3) !important;
+    border-radius: 3px;
+}
+#login:hover {
+    background-color: unset !important;
+    color: unset !important;
+}
+.nav i:hover {
+    background-color: rgba(255, 255, 255, .3);
+    border-radius: 3px;
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, .3);
+    border-radius: 3px;
+}
+
+.main-header {
+    background-color: rgba(0, 0, 0, .6);
+    
+}
+
+.shopping-cart{
+    margin-top: 85px;
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    background-color:whitesmoke;
+    right: 0;
+    display:none;
+    
+}
+
+
+
+.page{
+    height: 100%;
+    width: 100%;
+}
+
+.categories{
+    margin-top: 85px;
+    position: fixed;
+    float: left;
+    width: 20%;
+    height: 100%;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: darkgrey;
+    border-left: 0px !important;
+    border-top: 0.25px!important;
+    border-top-style: solid!important;
+    border-top-color: whitesmoke;
+    
+}
+
+.content{
+    margin-left: 20%;
+    margin-top: 85px;
+    float: left;
+    width: 80%;
+    background-color:white;
+    
+}
+
+
+.banner{
+    height: 150px;
+    width: 98%;
+    margin: 1%;
+    background-image: url(images/banner_indirim.jfif);
+    background-size: contain;
+}
+
+.product{
+    height: 380px;
+    width:250px;
+    margin: 20px;
+    border-radius: 5px;
+    
+    background-color: white;
+    
+}
+
+.pimg{
+    height: 300px;
+    width: 240px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+   
+    
+}
+
+.ptitle{
+    margin:0;
+    font-size:14px;
+    
+}
+.pcat{
+   margin:0;
+    font-size:10px;
+}
+.pprice{
+    margin-right: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    float: right;
+    text-align: right;
+}
+.buy-icon{
+    float: right;
+    
+}
+.pinfo{
+    float: left;
+    width: 120px;
+    margin-top: 5px;
+    margin-left: 15px;
+    text-overflow:ellipsis;
+    overflow: hidden;
+    white-space: nowrap; 
+}
+.pbuy{
+    width: 95px;
+    float: right;
+    margin-top: 5px;
+    margin-right: 15px;
+}
+
+.divider{
+    border-top: 1px solid darkgrey;
+    margin: 0;
+    
+}
+#pwrap{
+    margin-left: 10%;
+    margin-right:10%;
+}
+
+#pwrap.grid {
+  grid-template-columns: auto auto auto;
+    display:grid;
+}
+/* NO ZEBRA STRIPE */
+#pwrap.grid .psegment:nth-child(odd) {
+  background: inherit;
+}
+
+
+#flickity-slider{
+    
+    height: 400px;
+    width: 98%;
+    margin: 1%;
+}
+
+.cart-empty{
+    margin:25px;
+}
+.cart-table{
+    width: 100%;
+    margin-top:15px; 
+   
+}
+
+.cart-titles{
+    text-align: left;
+    height:50px;
+}
+
+
+.cart-photo-clmn{
+    width: 33%;
+}
+
+.cart-title-clmn{
+    width: 33%;
+}
+
+.cart-price-clmn{
+    width: 20%;
+}
+
+.cart-product-row{
+    margin-top: 10px;
+    font-style: normal italic;
+}
+
+.cart-photo-row{
+    
+}
+.cart-photo-row img{
+    width:50px;
+    margin-left: 30px;
+}
+.cart-title-row{
+}
+.cart-price-row{
+}
+
+.cart-remove-row{
+    margin-right: 30px;
+}
+
+.toplam-title{
+    float:left;
+    margin-left: 10%;
+    font-weight: bold;
+}
+
+.toplam-price{
+    float:right;
+    margin-right: 7%;
+}
+
+#cart-full{
+    height: 400px;
+    overflow-y: scroll;
+}
+
+
+
+.carousel {
+  background: white;
+}
+
+.carousel-cell {
+  width: 100%;
+  height: 450px;
+  margin-right: 10px;
+  counter-increment: carousel-cell;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  line-height: 450px;
+}
+
+
+#catfilter{
+    width: 85%;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+    
+    
+}
+
+#filter-price-min{
+    float: left;
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 2.5%;
+}
+
+#filter-price-max{
+    float:left;
+    width: 40%;
+    margin-right: 5%;
+    margin-left: 2.5%;
+}
+
+.cat-filter{
+    width: 50%;
+    margin-top:20px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.price-filter{
+    width: 50%;
+    margin-top:10px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.button-filter{
+    width: 30%;
+    margin-top:40px;
+    margin-left: 51%;
+    margin-bottom: 25px;
+}
+
+.button{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    border-width: 1px;
+    color:darkslategrey;
+    
+}
